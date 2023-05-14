@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Eya-cy-WNO">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -162,11 +163,12 @@
                         <outlet property="emailTextField" destination="pUV-gV-hcV" id="cJz-74-RyC"/>
                         <outlet property="passwordTextField" destination="aw6-yB-Rnl" id="xQ5-Jg-h8L"/>
                         <outlet property="spinner" destination="7Mq-Aa-Kj7" id="KfF-z4-BSI"/>
+                        <segue destination="GGg-gY-DbT" kind="show" identifier="goToDash" id="hlT-oP-sjt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98N-ff-lSW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116.793893129771" y="-402.11267605633805"/>
+            <point key="canvasLocation" x="1105" y="-402"/>
         </scene>
         <!--SignUpViewController-->
         <scene sceneID="88H-Sd-Int">
@@ -263,11 +265,12 @@
                         <outlet property="nameTextField" destination="sZ0-Uv-Ctm" id="ShY-39-gHE"/>
                         <outlet property="passwordTextField" destination="BGB-XZ-Jfq" id="dml-uo-WkO"/>
                         <outlet property="spinner" destination="rk2-HO-zMm" id="Pp2-sx-JEz"/>
+                        <segue destination="GGg-gY-DbT" kind="showDetail" identifier="goToDash" id="nXm-He-Vkl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kPO-kb-4F7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1116.793893129771" y="242.95774647887325"/>
+            <point key="canvasLocation" x="1120" y="245"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xsA-9s-hpi">
@@ -297,7 +300,40 @@
             </objects>
             <point key="canvasLocation" x="-592" y="-27"/>
         </scene>
+        <!--DashVC-->
+        <scene sceneID="vsX-Xp-kLw">
+            <objects>
+                <viewController id="GGg-gY-DbT" customClass="DashVC" customModule="Stoma" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xf9-5f-BAN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back, dear user!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sKR-2Z-J4j">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="78"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="abS-XW-iLz"/>
+                        <color key="backgroundColor" red="0.0089781861749999997" green="0.060567118230000001" blue="0.089161284270000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sKR-2Z-J4j" firstAttribute="top" secondItem="abS-XW-iLz" secondAttribute="top" id="Qsi-iY-M51"/>
+                            <constraint firstAttribute="trailing" secondItem="sKR-2Z-J4j" secondAttribute="trailing" id="dn7-8I-aAI"/>
+                            <constraint firstItem="sKR-2Z-J4j" firstAttribute="leading" secondItem="Xf9-5f-BAN" secondAttribute="leading" id="mGr-cW-xSP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nvh-FL-vL8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y6Z-GU-NXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1984" y="-62"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nXm-He-Vkl"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

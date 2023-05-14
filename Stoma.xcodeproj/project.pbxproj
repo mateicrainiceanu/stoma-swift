@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CADE8BA56F07476CA396714 /* Pods_Stoma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABAE437B9B4A0EC4DCADB74 /* Pods_Stoma.framework */; };
 		A976BD862A082B6B002CB50E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A976BD852A082B6B002CB50E /* LoginVC.swift */; };
 		A996ECC72A0D670300B16DEA /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996ECC62A0D670300B16DEA /* SignUpVC.swift */; };
 		A996ECCB2A0D6BE700B16DEA /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996ECCA2A0D6BE700B16DEA /* UserManager.swift */; };
 		A996ECCD2A0D6CDB00B16DEA /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = A996ECCC2A0D6CDB00B16DEA /* K.swift */; };
+		A9BF88D22A10FBB6008C0B2E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BF88D12A10FBB6008C0B2E /* NetworkManager.swift */; };
+		A9BF88D62A110A33008C0B2E /* DashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BF88D52A110A33008C0B2E /* DashVC.swift */; };
 		A9F8274C2A07FF9A00730267 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F8274B2A07FF9A00730267 /* AppDelegate.swift */; };
 		A9F8274E2A07FF9A00730267 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F8274D2A07FF9A00730267 /* SceneDelegate.swift */; };
 		A9F827532A07FF9A00730267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F827512A07FF9A00730267 /* Main.storyboard */; };
@@ -19,10 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91D6EFF121E4BB9FB8C0444A /* Pods-Stoma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stoma.release.xcconfig"; path = "Target Support Files/Pods-Stoma/Pods-Stoma.release.xcconfig"; sourceTree = "<group>"; };
+		A91BF20C286ABCE522DDEFE1 /* Pods-Stoma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stoma.debug.xcconfig"; path = "Target Support Files/Pods-Stoma/Pods-Stoma.debug.xcconfig"; sourceTree = "<group>"; };
 		A976BD852A082B6B002CB50E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A996ECC62A0D670300B16DEA /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A996ECCA2A0D6BE700B16DEA /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A996ECCC2A0D6CDB00B16DEA /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		A9BF88D12A10FBB6008C0B2E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A9BF88D52A110A33008C0B2E /* DashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashVC.swift; sourceTree = "<group>"; };
 		A9F827482A07FF9A00730267 /* Stoma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stoma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F8274B2A07FF9A00730267 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F8274D2A07FF9A00730267 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +37,7 @@
 		A9F827542A07FF9B00730267 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9F827572A07FF9B00730267 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9F827592A07FF9B00730267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EABAE437B9B4A0EC4DCADB74 /* Pods_Stoma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stoma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CADE8BA56F07476CA396714 /* Pods_Stoma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43FF351DDD34F73FF6218EBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EABAE437B9B4A0EC4DCADB74 /* Pods_Stoma.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E0E9EB082E5F583F792BC52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A91BF20C286ABCE522DDEFE1 /* Pods-Stoma.debug.xcconfig */,
+				91D6EFF121E4BB9FB8C0444A /* Pods-Stoma.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A976BD822A0829ED002CB50E /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				A996ECCA2A0D6BE700B16DEA /* UserManager.swift */,
 				A996ECCC2A0D6CDB00B16DEA /* K.swift */,
+				A9BF88D12A10FBB6008C0B2E /* NetworkManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -64,10 +91,27 @@
 		A976BD842A082A0A002CB50E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A9BF88D42A110A13008C0B2E /* Dashboard */,
+				A9BF88D32A110A0A008C0B2E /* Authentication */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A9BF88D32A110A0A008C0B2E /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
 				A976BD852A082B6B002CB50E /* LoginVC.swift */,
 				A996ECC62A0D670300B16DEA /* SignUpVC.swift */,
 			);
-			path = Controller;
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A9BF88D42A110A13008C0B2E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				A9BF88D52A110A33008C0B2E /* DashVC.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		A9F8273F2A07FF9A00730267 = {
@@ -75,6 +119,8 @@
 			children = (
 				A9F8274A2A07FF9A00730267 /* Stoma */,
 				A9F827492A07FF9A00730267 /* Products */,
+				9E0E9EB082E5F583F792BC52 /* Pods */,
+				43FF351DDD34F73FF6218EBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +153,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9F8275C2A07FF9B00730267 /* Build configuration list for PBXNativeTarget "Stoma" */;
 			buildPhases = (
+				C3BC6B0279E9BB288D8793F8 /* [CP] Check Pods Manifest.lock */,
 				A9F827442A07FF9A00730267 /* Sources */,
 				A9F827452A07FF9A00730267 /* Frameworks */,
 				A9F827462A07FF9A00730267 /* Resources */,
+				2AEFEBF225BC95BAB39D262A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,14 +214,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AEFEBF225BC95BAB39D262A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stoma/Pods-Stoma-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Stoma/Pods-Stoma-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Stoma/Pods-Stoma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3BC6B0279E9BB288D8793F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Stoma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9F827442A07FF9A00730267 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9BF88D62A110A33008C0B2E /* DashVC.swift in Sources */,
 				A9F8274C2A07FF9A00730267 /* AppDelegate.swift in Sources */,
 				A976BD862A082B6B002CB50E /* LoginVC.swift in Sources */,
 				A996ECC72A0D670300B16DEA /* SignUpVC.swift in Sources */,
+				A9BF88D22A10FBB6008C0B2E /* NetworkManager.swift in Sources */,
 				A996ECCD2A0D6CDB00B16DEA /* K.swift in Sources */,
 				A996ECCB2A0D6BE700B16DEA /* UserManager.swift in Sources */,
 				A9F8274E2A07FF9A00730267 /* SceneDelegate.swift in Sources */,
@@ -318,6 +410,7 @@
 		};
 		A9F8275D2A07FF9B00730267 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A91BF20C286ABCE522DDEFE1 /* Pods-Stoma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -331,6 +424,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,6 +440,7 @@
 		};
 		A9F8275E2A07FF9B00730267 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D6EFF121E4BB9FB8C0444A /* Pods-Stoma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -359,6 +454,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
